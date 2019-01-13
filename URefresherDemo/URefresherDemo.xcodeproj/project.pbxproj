@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBAD1A2621EB06DD00E86E63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A2521EB06DD00E86E63 /* AppDelegate.swift */; };
+		FBAD1A2821EB06DD00E86E63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A2721EB06DD00E86E63 /* ViewController.swift */; };
+		FBAD1A2D21EB06DE00E86E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAD1A2C21EB06DE00E86E63 /* Assets.xcassets */; };
+		FBAD1A3A21EB077900E86E63 /* URefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3921EB077900E86E63 /* URefresher.swift */; };
+		FBAD1A3C21EB07FC00E86E63 /* URefresherAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3B21EB07FC00E86E63 /* URefresherAnimator.swift */; };
+		FBAD1A3E21EB088A00E86E63 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */; };
+		FBAD1A4021EB08BA00E86E63 /* UIRefresherBarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */; };
+		FBAD1A4421EB19E200E86E63 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD1A4321EB19E200E86E63 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBAD1A2221EB06DD00E86E63 /* URefresherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URefresherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAD1A2521EB06DD00E86E63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBAD1A2721EB06DD00E86E63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBAD1A2C21EB06DE00E86E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBAD1A3121EB06DE00E86E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAD1A3921EB077900E86E63 /* URefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URefresher.swift; path = ../URefresher/URefresher.swift; sourceTree = "<group>"; };
+		FBAD1A3B21EB07FC00E86E63 /* URefresherAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URefresherAnimator.swift; path = ../URefresher/URefresherAnimator.swift; sourceTree = "<group>"; };
+		FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScrollViewExtension.swift; path = ../URefresher/UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIRefresherBarAnimator.swift; path = ../URefresher/UIRefresherBarAnimator.swift; sourceTree = "<group>"; };
+		FBAD1A4321EB19E200E86E63 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBAD1A1F21EB06DD00E86E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBAD1A1921EB06DD00E86E63 = {
+			isa = PBXGroup;
+			children = (
+				FBAD1A3821EB074200E86E63 /* URefresher */,
+				FBAD1A2421EB06DD00E86E63 /* URefresherDemo */,
+				FBAD1A2321EB06DD00E86E63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBAD1A2321EB06DD00E86E63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBAD1A2221EB06DD00E86E63 /* URefresherDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAD1A2421EB06DD00E86E63 /* URefresherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FBAD1A2521EB06DD00E86E63 /* AppDelegate.swift */,
+				FBAD1A2721EB06DD00E86E63 /* ViewController.swift */,
+				FBAD1A2C21EB06DE00E86E63 /* Assets.xcassets */,
+				FBAD1A3121EB06DE00E86E63 /* Info.plist */,
+				FBAD1A4321EB19E200E86E63 /* Launch Screen.storyboard */,
+			);
+			path = URefresherDemo;
+			sourceTree = "<group>";
+		};
+		FBAD1A3821EB074200E86E63 /* URefresher */ = {
+			isa = PBXGroup;
+			children = (
+				FBAD1A3921EB077900E86E63 /* URefresher.swift */,
+				FBAD1A3B21EB07FC00E86E63 /* URefresherAnimator.swift */,
+				FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */,
+				FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */,
+			);
+			name = URefresher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBAD1A2121EB06DD00E86E63 /* URefresherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAD1A3421EB06DE00E86E63 /* Build configuration list for PBXNativeTarget "URefresherDemo" */;
+			buildPhases = (
+				FBAD1A1E21EB06DD00E86E63 /* Sources */,
+				FBAD1A1F21EB06DD00E86E63 /* Frameworks */,
+				FBAD1A2021EB06DD00E86E63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URefresherDemo;
+			productName = URefresherDemo;
+			productReference = FBAD1A2221EB06DD00E86E63 /* URefresherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBAD1A1A21EB06DD00E86E63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wenfeng;
+				TargetAttributes = {
+					FBAD1A2121EB06DD00E86E63 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FBAD1A1D21EB06DD00E86E63 /* Build configuration list for PBXProject "URefresherDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBAD1A1921EB06DD00E86E63;
+			productRefGroup = FBAD1A2321EB06DD00E86E63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBAD1A2121EB06DD00E86E63 /* URefresherDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBAD1A2021EB06DD00E86E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAD1A4421EB19E200E86E63 /* Launch Screen.storyboard in Resources */,
+				FBAD1A2D21EB06DE00E86E63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBAD1A1E21EB06DD00E86E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAD1A3E21EB088A00E86E63 /* UIScrollViewExtension.swift in Sources */,
+				FBAD1A4021EB08BA00E86E63 /* UIRefresherBarAnimator.swift in Sources */,
+				FBAD1A2821EB06DD00E86E63 /* ViewController.swift in Sources */,
+				FBAD1A3C21EB07FC00E86E63 /* URefresherAnimator.swift in Sources */,
+				FBAD1A3A21EB077900E86E63 /* URefresher.swift in Sources */,
+				FBAD1A2621EB06DD00E86E63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBAD1A3221EB06DE00E86E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBAD1A3321EB06DE00E86E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBAD1A3521EB06DE00E86E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SERSCQNW;
+				INFOPLIST_FILE = URefresherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenfeng.URefresherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBAD1A3621EB06DE00E86E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SERSCQNW;
+				INFOPLIST_FILE = URefresherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenfeng.URefresherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBAD1A1D21EB06DD00E86E63 /* Build configuration list for PBXProject "URefresherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAD1A3221EB06DE00E86E63 /* Debug */,
+				FBAD1A3321EB06DE00E86E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAD1A3421EB06DE00E86E63 /* Build configuration list for PBXNativeTarget "URefresherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAD1A3521EB06DE00E86E63 /* Debug */,
+				FBAD1A3621EB06DE00E86E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBAD1A1A21EB06DD00E86E63 /* Project object */;
+}
