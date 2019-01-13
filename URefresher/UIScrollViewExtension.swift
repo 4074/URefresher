@@ -46,6 +46,7 @@ public extension UIScrollView {
         let refresher = URefresher(launcher: launcher, recycler: recycler, frame: CGRect(x: 0, y: -height, width: frame.width, height: height), animator: animator)
         refresher.tag = URefresherTag
         addSubview(refresher)
+        sendSubviewToBack(refresher)
         return refresher
     }
     

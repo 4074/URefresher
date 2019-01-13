@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         tableView.tableHeaderView = UIView(frame: tableView.bounds)
         tableView.tableHeaderView?.backgroundColor = .white
         
-        let animator = URefresherBarAnimator(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 48))
+        let animator = URefresherArticleAnimator(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         animator.barColor = .red
         animator.render()
         

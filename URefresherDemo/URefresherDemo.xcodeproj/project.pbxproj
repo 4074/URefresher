@@ -15,6 +15,7 @@
 		FBAD1A3E21EB088A00E86E63 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */; };
 		FBAD1A4021EB08BA00E86E63 /* UIRefresherBarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */; };
 		FBAD1A4421EB19E200E86E63 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD1A4321EB19E200E86E63 /* Launch Screen.storyboard */; };
+		FBAD1A4621EB840C00E86E63 /* URefresherArticleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD1A4521EB840C00E86E63 /* URefresherArticleAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScrollViewExtension.swift; path = ../URefresher/UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIRefresherBarAnimator.swift; path = ../URefresher/UIRefresherBarAnimator.swift; sourceTree = "<group>"; };
 		FBAD1A4321EB19E200E86E63 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FBAD1A4521EB840C00E86E63 /* URefresherArticleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URefresherArticleAnimator.swift; path = ../URefresher/URefresherArticleAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +75,11 @@
 		FBAD1A3821EB074200E86E63 /* URefresher */ = {
 			isa = PBXGroup;
 			children = (
+				FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */,
 				FBAD1A3921EB077900E86E63 /* URefresher.swift */,
 				FBAD1A3B21EB07FC00E86E63 /* URefresherAnimator.swift */,
 				FBAD1A3F21EB08B900E86E63 /* UIRefresherBarAnimator.swift */,
-				FBAD1A3D21EB088A00E86E63 /* UIScrollViewExtension.swift */,
+				FBAD1A4521EB840C00E86E63 /* URefresherArticleAnimator.swift */,
 			);
 			name = URefresher;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				FBAD1A3E21EB088A00E86E63 /* UIScrollViewExtension.swift in Sources */,
 				FBAD1A4021EB08BA00E86E63 /* UIRefresherBarAnimator.swift in Sources */,
 				FBAD1A2821EB06DD00E86E63 /* ViewController.swift in Sources */,
+				FBAD1A4621EB840C00E86E63 /* URefresherArticleAnimator.swift in Sources */,
 				FBAD1A3C21EB07FC00E86E63 /* URefresherAnimator.swift in Sources */,
 				FBAD1A3A21EB077900E86E63 /* URefresher.swift in Sources */,
 				FBAD1A2621EB06DD00E86E63 /* AppDelegate.swift in Sources */,
