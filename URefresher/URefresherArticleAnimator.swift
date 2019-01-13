@@ -82,15 +82,16 @@ open class URefresherArticleAnimator: URefresherAnimator {
     }
     
     override public func didChange(y: CGFloat, progress: CGFloat) {
-        frame = CGRect(x: frame.minX, y: min((y - frame.height) / 2, 0), width: frame.width, height: frame.height)
+        if state == .release {
+            frame = CGRect(x: frame.minX, y: y - frame.height, width: frame.width, height: frame.height)
+        } else {
+            frame = CGRect(x: frame.minX, y: min((y - frame.height) / 2, 0), width: frame.width, height: frame.height)
+        }
         
         if !animating {
             if progress <= 1 && progress >= 0 {
-                print("===============")
                 for (i, bar) in bars.enumerated() {
                     let width = (progress - CGFloat(i)/CGFloat(barCount)) * CGFloat(barCount) * barSize.width
-                    
-                    print(width)
                     setBarWidth(bar, width: width)
                 }
             }

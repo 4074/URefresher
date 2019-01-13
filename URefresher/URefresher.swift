@@ -37,6 +37,7 @@ open class URefresher: UIView {
     internal var state: URefresherState = .normal {
         didSet {
             if state != oldValue {
+                animator.state = state
                 switch state {
                 case .normal:
                     reset()
