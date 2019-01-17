@@ -24,17 +24,26 @@ open class URefresherBarAnimator: URefresherAnimator {
     
     override required public init(frame: CGRect) {
         super.init(frame: frame)
-        render()
+        initView()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func render() {
+    public override func initView() {
         let width = (barSize.width + barSpacing) * CGFloat(barCount) - barSpacing
         wrap = UIView(frame: CGRect(x: (frame.width - width) / 2, y: (frame.height - barSize.height) / 2, width: width, height: barSize.height))
         addSubview(wrap)
+        
+        render()
+    }
+    
+    public func render() {
+        for bar in bars {
+            bar.removeFromSuperview()
+        }
+        bars.removeAll()
         
         for i in 0..<barCount {
             let bar = UIView(frame: CGRect(x: CGFloat(i) * (barSize.width + barSpacing), y: 0, width: barSize.width, height: 0))
