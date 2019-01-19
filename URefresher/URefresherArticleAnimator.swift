@@ -12,13 +12,14 @@ open class URefresherArticleAnimator: URefresherAnimator {
     
     public var wrap: UIView!
     public var bars: [UIView] = []
-    public var barSize: CGSize = CGSize(width: 20, height: 2)
-    public var barSpacing: CGFloat = 4
+    public var barSize: CGSize = CGSize(width: 16, height: 2)
+    public var barSpacing: CGFloat = 3
     public var barCount: Int = 3
     public var barColor: UIColor = .red
     
     public var activeIndex: Int = 0
-    public var activeDuration: TimeInterval = 0.15
+    public var activeDuration: TimeInterval = 0.2
+    public var activeWidths: [CGFloat] = [4, 10, 16]
     public var animating: Bool = false
     
     override required public init(frame: CGRect) {
@@ -50,16 +51,13 @@ open class URefresherArticleAnimator: URefresherAnimator {
     
     private func startBarAnimating() {
         if !animating { return }
-        if self.activeIndex == 0 {
-            for bar in bars {
-                setBarWidth(bar, width: 0)
-            }
-        }
         
         UIView.animate(withDuration: activeDuration, animations: {
-            self.setBarWidth(self.bars[self.activeIndex], width: self.barSize.width)
+            for (i, bar) in self.bars.enumerated() {
+                self.setBarWidth(bar, width: self.activeWidths[ (self.activeWidths.count + (i - self.activeIndex)) % self.activeWidths.count])
+            }
         }) { (_) in
-            self.activeIndex = (self.activeIndex + 1) % self.bars.count
+            self.activeIndex = (self.activeIndex + 1) % self.activeWidths.count
             self.startBarAnimating()
         }
     }

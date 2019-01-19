@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         tableView.tableHeaderView = UIView(frame: tableView.bounds)
         tableView.tableHeaderView?.backgroundColor = .white
         
-        let animator = URefresherArticleAnimator(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
+        let animator = URefresherArticleAnimator(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 48))
         animator.barColor = .red
         animator.render()
         
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         tableView.addURefresher(launcher: { () -> (Any) in
             return "promise"
         }, recycler: { (result) in
-            self.setTimeout(2, block: {
+            self.setTimeout(0.2, block: {
                 self.tableView.stopURefresher()
             })
         }, animator: animator)
